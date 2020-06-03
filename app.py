@@ -46,7 +46,7 @@ class Translator(Resource):
             'VBP',
             'VBZ',
         ]
-        
+
         # final words
         final = []
 
@@ -60,3 +60,16 @@ api.add_resource(Translator, '/translate')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+'''
+for deployment
+'''
+
+# execute in python
+
+#import nltk
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('tagsets')
