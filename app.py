@@ -34,17 +34,14 @@ class Translator(Resource):
             'JJ',
             'JJR',
             'JJS',
-            'NNP',
-            'NNPS',
-            'RB',
-            'RBR',
-            'RBS',
             'VB',
             'VBG',
             'VBD',
             'VBN',
             'VBP',
             'VBZ',
+            'NN',
+            'NNPS'
         ]
 
         # final words
