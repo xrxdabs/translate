@@ -48,8 +48,8 @@ class Translator(Resource):
         final = []
 
         for i in pos_tag:
-            if i[1] in tags:
-                final.append(i[0])
+            if i[1] in tags and i[0] != "is" and len(i[0]) > 2:
+                final.append(i[0].strip())
 
         return json.loads(json.dumps(final))
         
@@ -58,15 +58,3 @@ api.add_resource(Translator, '/translate')
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-
-'''
-for deployment
-'''
-
-# execute in python
-
-#import nltk
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('tagsets')
