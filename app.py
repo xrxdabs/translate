@@ -32,16 +32,16 @@ class Translator(Resource):
         # kuha lang ng adjective, proper noun, adverb, verb 
         tags = [
             'JJ',
-            'JJR',
-            'JJS',
+            # 'JJR',
+            # 'JJS',
             'VB',
-            'VBG',
-            'VBD',
-            'VBN',
+            # 'VBG',
+            # 'VBD',
+            # 'VBN',
             'VBP',
-            'VBZ',
+            # 'VBZ',
             'NN',
-            'NNPS'
+            'NNS'
         ]
 
         # final words
